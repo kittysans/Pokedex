@@ -1,0 +1,49 @@
+.pokemon-detail-container {
+    height: 100dvh;
+}
+
+.pokemon-detail-container .name-id-pokemon {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.pokemon-detail-container .name-id-pokemon h3 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.pokemon-detail-container .name-id-pokemon .icon-arrow-left {
+    cursor: pointer;
+}
+
+.pokemon-detail-container .image-container {
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pokemon-detail-container .image-container img {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-content: center;
+    user-select: none;
+    -webkit-user-drag: none;
+    cursor: pointer;
+}
+
+.pokemon-detail-container .image-container .arrow {
+    cursor: pointer;
+}
+/* <div className='pokemon-deatil-container'>
+            <div className='name-id-pokemon'>
+                <FaArrowLeft className='icon-arrow-left'/>
+                <h3>{name}</h3>
+                <h5>{id}</h5>
+            </div> */

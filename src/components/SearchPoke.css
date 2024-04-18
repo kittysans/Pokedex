@@ -1,0 +1,74 @@
+.search-wrapper {
+    height: 400px;
+
+    display: grid;
+    place-content: center;
+    background-image: url('./Assets/BG.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.search-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #000);
+    z-index: 1;
+}
+
+.search-wrapper .search-container {
+    display: grid;
+    gap: 20px;
+    padding-inline: 30px;
+}
+
+.search-wrapper .search-container h2, p {
+    text-transform: capitalize;
+    color: #fff;
+    z-index: 1;
+}
+
+.search-wrapper .search-container .input-container {
+    max-width: 800px;
+    width: 100%;
+    height: 50px;
+
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.search-wrapper .search-container .input-container input {
+    width: 100%;
+    height: 100%;
+   
+    padding-inline: 50px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: #f9f9f9;
+    box-shadow: 0 0 3px #eee;
+}
+
+.search-wrapper .search-container .input-container .icon {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    translate: -50% -50%;
+}
+
+/* <div className="search-wrapper">
+<div className="search-container">
+  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sint?</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sint?</p>
+  <div className='input-container'>
+    <IoSearch className='icon'/>
+    <input type="text" onChange={handleInputChange} placeholder='searching name, type, id...'/>
+  </div>
+</div>
+</div> */
